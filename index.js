@@ -67,8 +67,11 @@ app.use(bodyParser.json());
 //   await browser.close();
 //   res.json(results);
 // });
-app.post('/scrape', (req, res) => {
-  res.send('Scrape endpoint is working');
+// app.post('/scrape', (req, res) => {
+//   res.send('Scrape endpoint is working');
+// });
+app.get('/', (req, res) => {
+  res.send('Server is running');
 });
 
 app.listen(port, "0.0.0.0", () => {
