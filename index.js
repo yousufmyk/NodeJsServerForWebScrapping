@@ -68,6 +68,6 @@ app.post('/scrape', async (req, res) => {
   res.json(results);
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Server running on http://localhost:${port}`);
 });
